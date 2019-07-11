@@ -8,6 +8,8 @@ workflows:
 
 jobs:
     test:
+        environment:
+            - DOTNET_CLI_TELEMETRY_OPTOUT: 1
         working_directory: ~/project
         docker:
             - image: mcr.microsoft.com/dotnet/core/sdk
