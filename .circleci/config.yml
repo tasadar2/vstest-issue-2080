@@ -15,4 +15,6 @@ jobs:
             - image: mcr.microsoft.com/dotnet/core/sdk
         steps:
             - checkout
-            - run: dotnet test --configuration Release
+            - run: dotnet test --configuration Release --diag:log.txt
+            - store_artifacts:
+                path: log.txt
