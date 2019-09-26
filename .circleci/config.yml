@@ -13,4 +13,4 @@ jobs:
             - image: mcr.microsoft.com/dotnet/core/sdk
         steps:
             - checkout
-            - run: dotnet test --configuration Release --logger:console;noprogress=true
+            - run: dotnet test --configuration Release --logger:"console;noprogress=true"
