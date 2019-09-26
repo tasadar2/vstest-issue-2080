@@ -8,8 +8,6 @@ workflows:
 
 jobs:
     test:
-        environment:
-            - MSBUILDDISABLENODEREUSE: 1
         working_directory: ~/project
         docker:
             - image: mcr.microsoft.com/dotnet/core/sdk
